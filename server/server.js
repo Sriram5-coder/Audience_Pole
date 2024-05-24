@@ -197,6 +197,6 @@ app.post("/check", async (req, res) => {
 });
 
     
-app.listen(10000,()=>{
+app.listen(3000,()=>{
     console.log("Server is running");
 })
