@@ -1,0 +1,56 @@
+/* Styles */
+
+.elements{
+  width: 80%;
+  
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #eee;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  td:hover {
+    background-color: #ccc;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  /* Animations */
+  
+  table tbody tr {
+    opacity: 1;
+    /* transform: translateY(20px); */
+  }
+  
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "person": {
+        "id": "",
+        "rollNumber": "20p31a1243",
+        "selectedTeam": "Team 2",
+        "ipAddress": "210.212.210.84"
+      },
+      "id": 1
+    },
+    {
+      "rollNumber": "21p35a1205",
+      "selectedTeam": "Team 3",
+      "id": 2
+    },
+    {
+      "rollNumber": "21p35a1205",
+      "selectedTeam": "Team 2",
+      "ipAddress": "103.28.246.77",
+      "id": 3
+    }
+  ]
+}
