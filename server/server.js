@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose =require('mongoose');
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 4000;
 const VoteModel=require('./models/votedata');
 const LoginModel=require('./models/logindata');
 const RegisterModel=require('./models/Register');
@@ -198,6 +197,6 @@ app.post("/check", async (req, res) => {
 });
 
     
-app.listen(${port},()=>{
+app.listen(3004,()=>{
     console.log("Server is running");
 })
