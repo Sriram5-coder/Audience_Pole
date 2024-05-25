@@ -15,7 +15,7 @@ function Team_edit() {
       teamlead,
       branch
     };
-    axios.post("http://localhost:3001/teamadd", data)
+    axios.post("https://audience-poll-o9gm.onrender.com/teamadd", data)
       .then(result => {
         console.log(result);
         navigate('/admin');
