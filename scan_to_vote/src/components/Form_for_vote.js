@@ -13,7 +13,7 @@ function FormForVote() {
   useEffect(() => {
     // Fetch the list of teams from your server
     axios
-      .get("http://localhost:3001/getTeams")
+      .get("https://audience-poll-o9gm.onrender.com/getTeams")
       .then((response) => setTeams(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -51,7 +51,7 @@ function FormForVote() {
           navigate('/failure');
         } else {
           axios
-          .post("http://localhost:3001/getdata", data)
+          .post("https://audience-poll-o9gm.onrender.com/getdata", data)
           .then((result) => {
             console.log(result.data);
             navigate('/success');
