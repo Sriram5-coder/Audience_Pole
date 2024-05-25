@@ -14,7 +14,7 @@ function Result() {
       if (!shouldResetVotes) return;
 
       try {
-        const response = await fetch('http://localhost:3001/api/reset-votes', {
+        const response = await fetch('https://audience-poll-o9gm.onrender.com/api/reset-votes', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ function Result() {
 
   useEffect(() => {
     // Make a GET request to your Express.js server's API endpoint
-    axios.get('https://inquisitive-duck-jodhpurs.cyclic.app/team-vote-counts')
+    axios.get('https://audience-poll-o9gm.onrender.com/team-vote-counts')
       .then((response) => {
         const { teamCounts, winningTeam, runnerUpTeam } = response.data;
         setTeamVoteCounts(teamCounts);
