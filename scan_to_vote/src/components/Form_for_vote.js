@@ -45,7 +45,7 @@ function FormForVote() {
     };
 
     axios
-      .post("http://localhost:3001/checkDuplicateRollNumber", { rollNumber })
+      .post("https://audience-poll-o9gm.onrender.com/checkDuplicateRollNumber", { rollNumber })
       .then((result) => {
         if (result.data === "Duplicate") {
           navigate('/failure');
