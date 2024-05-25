@@ -10,7 +10,7 @@ function Teamlist() {
   useEffect(() => {
     // Fetch the list of teams from your server
     axios
-      .get("http://localhost:3001/getTeams1")
+      .get("https://audience-poll-o9gm.onrender.com/getTeams1")
       .then((response) => setTeams(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -18,7 +18,7 @@ function Teamlist() {
   const handleDeleteTeam = (teamName) => {
     console.log(`Deleting team with name: ${teamName}`);
     axios
-      .delete(`http://localhost:3001/teams/${teamName}`)
+      .delete(`https://audience-poll-o9gm.onrender.com/teams/${teamName}`)
       .then((response) => {
         setTeams(teams.filter((team) => team.teamname !== teamName));
       })
